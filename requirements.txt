@@ -1,0 +1,8 @@
+torch 
+torchaudio 
+torch-audiomentations 
+tqdm
+soundfile
+lxml
+requests
+beautifulsoup4
