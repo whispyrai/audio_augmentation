@@ -16,12 +16,12 @@ if noise_dir.exists():
     noise_files = [str(file) for file in temp]
 
 AUGMENTATIONS = {
-    # "pitch": PitchShift(
-    #     min_transpose_semitones=-0.5,
-    #     max_transpose_semitones=0.5,
-    #     sample_rate=SAMPLE_RATE,
-    #     output_type="tensor",
-    # ),
+    "pitch": PitchShift(
+        min_transpose_semitones=-0.5,
+        max_transpose_semitones=0.5,
+        sample_rate=SAMPLE_RATE,
+        output_type="tensor",
+    ),
     "gain": Gain(
         min_gain_in_db=-3.0,
         max_gain_in_db=3.0,
