@@ -7,7 +7,7 @@ import torchaudio
 import torch
 
 # torchaudio.set_audio_backend("soundfile")
-SAMPLE_RATE = 48000
+SAMPLE_RATE = 16000
 
 noise_files = []
 noise_dir = Path("audio_augmentation/noise").resolve()
